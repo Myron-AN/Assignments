@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Registeration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/Saylani-logo.png" alt="" class="center">
+        <h1 style="text-align:center"><u>Student Registration Form</u></h1>
+        <form action="nextpage.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="enter first name" required class="input_feild">
+                    <small>(max 30 characters a-z and A-Z)</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="enter last name" required class="input_feild">
+                    <small>(max 30 characters a-z and A-Z)</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="dob">Date of birth</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" class="input_feild">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="enter your email" class="input_feild">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Mobile Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{7}" class="input_feild">
+                    <small>(10 digit number)</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="male">Gender</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="message" id="address" rows="10" class="input_feild"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="city">City</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="city" id="city" placeholder="Enter city name" class="input_feild">
+                    <small>(max 30 characters a-z and A-Z)</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="code">Pin Code</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="code" id="code" placeholder="Enter pincode" class="input_feild">
+                    <small>(6 digit number)</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="city">State</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="state" id="state" placeholder="Enter state" class="input_feild">
+                    <small>(max 30 characters a-z and A-Z)</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="country" id="country" placeholder="Enter country" class="input_feild">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="">Hobbies</label>
+                </div>
+                <div class="col-75">
+                    <input type="checkbox" id="hobby1" name="hobby1" value="drawing">
+                    <label for="hobby1"> Drawing</label>
+                    <input type="checkbox" id="hobby2" name="hobby2" value="singing">
+                    <label for="hobby2"> Singing</label>
+                    <input type="checkbox" id="hobby3" name="hobby3" value="dancing">
+                    <label for="hobby3"> Dancing</label>
+                    <input type="checkbox" id="hobby4" name="hobby4" value="sketching">
+                    <label for="hobby4"> Sketching</label>
+                    <br>
+                    <input type="checkbox" id="hobby5" name="hobby5 " value="other">
+                    <label for="hobby5"> Others</label>
+                    <input type="text" placeholder="mention other hobby" class="input_feild">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="qauli">Qaulification</label>
+                </div>
+                <div class="col-75">
+                    <table>
+                        <tr>
+                            <th>S#</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td>
+                                <input type="text" name="" id="qauli">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="courses">Courses Applied for</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="bca" name="courses" value="BCA">
+                    <label for="bca">BCA</label>
+                    <input type="radio" id="bcom" name="courses" value="B.Com">
+                    <label for="bcom">B.com</label>
+                    <input type="radio" id="bsc" name="courses" value="B.Sc">
+                    <label for="bsc">B.Sc</label>
+                    <input type="radio" id="ba" name="courses" value="BA">
+                    <label for="ba">BA</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
