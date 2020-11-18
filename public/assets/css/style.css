@@ -7,3 +7,10 @@ body{
   margin-bottom: 1.5rem !important;
 }
 
+.page-footer{
+  background-color: rgb(248, 249, 250) !important;
+}
+
+.Qbtn{
+  width: 100px;
+}

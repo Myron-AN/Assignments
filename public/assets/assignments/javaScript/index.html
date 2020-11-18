@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Assignment</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../../img/logo.png" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <script src="app.js"></script>
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../../../index.html">Myron</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Assignments
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../preiodicTable/index.html">Preiodic Table</a>
+            <a class="dropdown-item" href="../registrationForm/index.html">Registration Form</a>
+            <a class="dropdown-item" href="#">Home Page</a>
+            <a class="dropdown-item" href="../../../index.html">Personal Website</a>
+            <a class="dropdown-item" href="index.html">JavaScript Practice</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Final Project</a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+    </div>
+  </nav>
+
+  <!-- navbar -->
+
+
+
+  <div class="container">
+
+    <div class="row">
+      <h2 class="hh-1">JavaScript Practice</h2>
+    </div>
+
+    <!-- chapters -->
+
+    <div class="accordion" id="accordionExample">
+      <!-- chapter 1 -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              Chapter 1 - AlERTS
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="container">
+              <p>1. Write a script to greet your website visitor using JS alert box.
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="AQ1()">Try It</button>
+              </p>
+              <p>2. Write a script to display following message on your web page:
+                <br>
+                <img src="img/img1.png" alt="">
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="AQ2()">Try It</button>
+              </p>
+              <p>3. Write a script to display following message on your web page: (Hint : Use line break)
+                <br>
+                <img src="img/img2.png" alt="">
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="AQ3()">Try It</button>
+              </p>
+              <p>4. Write a script to display following messages in sequence: ALERTS | JAVASCRIPT Page 2 of 3
+                <img src="img/img3.png" alt="">
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="AQ4()">Try It</button>
+              </p>
+              <p>5. Generate the following message through browser’s developer console:
+                <br>
+                <img src="img/img4.png" alt="">
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="AQ5()">Try It</button>
+              </p>
+              <p>6. Make use of alerts in your new/existing HTML & CSS project.
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn">Try It</button>
+              </p>
+              <p>7. Practice placement of script> /script> element in following sections of your project in exercise 6:
+                <br> a. Head
+                <br> b. Body (before your page’s HTML)
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn">Try It</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- chapter 2 -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Chapter 2 - VARIABLES FOR STRINGS
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="container">
+              <p>1. Declare a variable called username.
+                <br>
+                <img src="img/img5.png" alt="">
+                <br>
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" data-toggle="tooltip" data-placement="right" title="check console"
+                  onclick="VS1()">Try It</button>
+              </p>
+              <p>2. Declare a variable called myName & assign to it a string that represents your Full Name.
+                <br>
+                <img src="img/img6.png" alt="">
+                <br>
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" data-toggle="tooltip" data-placement="right" title="check console"
+                  onclick="VS2()">Try It</button>
+              </p>
+              <p>3. Write script to
+                <br> a) Declare a JS variable, titled message.
+                <br> b) Assign “Hello World” to variable message
+                <br> c) Display the message in alert box.
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="VS3()">Try It</button>
+              </p>
+              <p>4. Write a script to save student’s bio data in JS variables and show the data in alert boxes.
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="VS4()">Try It</button>
+              </p>
+              <p>5. Write a script to display the following alert using one JS variable:
+                <br>
+                <img src="img/img7.png" alt="">
+                <br>
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="VS5()">Try It</button>
+              </p>
+              <p>6.Declare a variable called email and assign to it a string that represents your Email Address(e.g. example@example.com).
+                Show the blow mentioned message in an alert box.(Hint: use string concatenation).
+                <br>
+                <img src="img/img8.png" alt="">
+                <br>
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="VS6()">Try It</button>
+              </p>
+              <p>7. Declare a variable called book & give it the value “A smarter way to learn JavaScript”. Display the following
+                message in an alert box:
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="VS7()">Try It</button>
+              </p>
+              <p>8. Write a script to display this in browser through JS.
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="VS8()">Try It</button>
+              </p>
+              <p>9. Store following string in a variable and show in alert and browser through JS “▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="VS9()">Try It</button>
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- chapter 3 -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              Chapter 3 - VARIABLES FOR NUMBER
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="container">
+              <p>1. Declare a variable called age & assign to it your age. Show your age in an alert box.
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="">Try It</button>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sample -->
+      <!-- <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+              aria-expanded="false" aria-controls="collapseFour">
+              Collapsible Group Item #4
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="container">
+              <p>1.
+                <br>
+                <button type="button" class="btn btn-dark btn-sm Qbtn" onclick="">Try It</button>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+
+</html>
