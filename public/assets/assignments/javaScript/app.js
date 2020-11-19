@@ -153,4 +153,3 @@ function VS9() {
 // var o = m % n;
 // document.write("Modulus of 8 and 2 is " + o + "<br>");
 
-var a = 5;
