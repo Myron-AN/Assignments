@@ -83,28 +83,40 @@ function VS9() {
 
 // Chapter 3
 
-// var age = 24;
-// alert("i'm " + age + " years old");
+function VN1() {
+  var age = 24;
+  alert("i'm " + age + " years old");
+}
 
-// var T = 15;
-// alert("you have visited this site " + T + " times");
+function VN2() {
+  var T = 15;
+  alert("you have visited this site " + T + " times");
+}
+
+function VN3() {
+  var birthYear = 1996;
+  document.write("My birth year is " + birthYear + "<br>" + "Data type of my declared variable is number");
+}
+
+function VN4() {
+  var visitorName = "John Doe";
+  var productTitile = "T-shirt(s)";
+  var qty = 5;
+  document.write(visitorName + " ordered " + qty + productTitile + " on XYZ Clothing store");
+}
 
 
-// var birthYear = 1996;
-// document.write("My birth year is " + birthYear + "<br>" + "Data type of my declared variable is number");
 
-// var visitorName = "John Doe";
-// var productTitile = "T-shirt(s)";
-// var qty = 5 ;
-// document.write(visitorName + " ordered " + qty + productTitile + " on XYZ Clothing store");
 
 
 // Chapter 4
 
-// var firstVariable = "Letters"; 
-// var secondVariable = "Numbers";
-// var thirdVariable = "Symbols";
-// document.write(firstVariable + " " + secondVariable + " " + thirdVariable);
+function ILL1() {
+  var firstVariable = "Letters";
+  var secondVariable = "Numbers";
+  var thirdVariable = "Symbols";
+  console.log(firstVariable + " " + secondVariable + " " + thirdVariable);
+}
 
 // // legal Variables
 // var $name;
@@ -119,37 +131,211 @@ function VS9() {
 // var 1st_name;
 // var my-name;
 
-// document.write("<strong>Rules for Naming JS variables!</strong>" + "<br><br>");
-// document.write("Variable names can only contain numbers, letters, $ and _. For example: $my_1stVariable. <br>");
-// document.write("Variable must begin with a letter, $ or _. For example: $name, _name or name. <br>");
-// document.write("Variable name are case sensitive. <br>");
-// document.write("Variable name should not be JS keywords. <br>");
+function ILL2() {
+  document.write("<strong>Rules for Naming JS variables!</strong>" + "<br><br>");
+  document.write("Variable names can only contain numbers, letters, $ and _. For example: $my_1stVariable. <br>");
+  document.write("Variable must begin with a letter, $ or _. For example: $name, _name or name. <br>");
+  document.write("Variable name are case sensitive. <br>");
+  document.write("Variable name should not be JS keywords. <br>");
+}
 
 
 // Chapter 5
 
-// var a = 5;
-// var b = 5;
-// var c = a + b;
-// document.write("Sum of 5 and 5 is " + c + "<br>");
+function ME1() {
+  var a = 5;
+  var b = 5;
+  var c = a + b;
+  document.write("Sum of 5 and 5 is " + c + "<br>");
+}
 
-// var d = 10;
-// var e = 5;
-// var f = d - e;
-// document.write("Subtraction of 10 and 5 is " + f + "<br>");
+function ME2() {
+  var d = 10;
+  var e = 5;
+  var f = d - e;
+  document.write("Subtraction of 10 and 5 is " + f + "<br>");
+  var g = 2;
+  var h = 2;
+  var i = g * h;
+  document.write("Multiplication of 2 and 2 is " + i + "<br>");
+  var j = 9;
+  var k = 3;
+  var l = j / k;
+  document.write("Division of 9 and 3 is " + l + "<br>");
+  var m = 8;
+  var n = 2;
+  var o = m % n;
+  document.write("Modulus of 8 and 2 is " + o + "<br>");
+}
 
-// var g = 2;
-// var h = 2;
-// var i = g * h;
-// document.write("Multiplication of 2 and 2 is " + i + "<br>");
+function ME3() {
+  var a;
+  document.write("Value after variable declaration is " + a);
+  a = 5;
+  document.write("<br>Initial value " + a);
+  ++a;
+  document.write("<br>Value after increment is " + a);
+  var b = a + 7;
+  document.write("<br>Value after addition is " + b);
+  --b;
+  document.write("<br>Value after decrement is " + b);
+  var c = 3 / b;
+  console.log(c);
+  document.write("<br>The remainder is: " + c);
+}
 
-// var j = 9;
-// var k = 3;
-// var l = j / k;
-// document.write("Division of 9 and 3 is " + l + "<br>");
+function ME4() {
+  var ticketPrice = 600;
+  var ticketPurchased = 5;
+  var total = ticketPrice * ticketPurchased;
+  document.write("Total cost to buy " + ticketPurchased + " tickets to a movie is " + total + "PKR");
+}
 
-// var m = 8;
-// var n = 2;
-// var o = m % n;
-// document.write("Modulus of 8 and 2 is " + o + "<br>");
+
+function ME5() {
+  var a = 5;
+  document.write("Table of " + a)
+  var b = a * 1;
+  document.write("<br>5 x 1 = " + b);
+  var c = a * 2;
+  document.write("<br>5 x 2 = " + c);
+  var d = a * 3;
+  document.write("<br>5 x 3 = " + d);
+  var e = a * 4;
+  document.write("<br>5 x 4 = " + e);
+  var f = a * 5;
+  document.write("<br>5 x 5 = " + f);
+  var g = a * 6;
+  document.write("<br>5 x 6 = " + g);
+  var h = a * 7;
+  document.write("<br>5 x 7 = " + h);
+  var i = a * 8;
+  document.write("<br>5 x 8 = " + i);
+  var j = a * 9;
+  document.write("<br>5 x 9 = " + j);
+  var k = a * 10;
+  document.write("<br>5 x 10 = " + k);
+}
+
+function ME6() {
+  var tempInC = 25;
+  var tempInF = (tempInC * 9 / 5) + 31;
+  document.write(tempInC + "&#8451 is " + tempInF + "&#8457 <br>");
+  var tempInF = 70;
+  var tempInC = (tempInF - 32) * 5 / 9;
+  document.write(tempInF + "&#8457 is " + tempInC + "&#8451");
+}
+
+
+function ME7() {
+  var itemOnePrice = 650;
+  var itemTwoPrice = 100;
+  var qty1 = 3;
+  var qty2 = 7;
+  var shipCharges = 100;
+  var total = (650 * 3) + (100 * 7) + 100;
+  document.write(
+    "<h1>Shopping Cart</h1>" +
+    "<br>" +
+    "Price of item 1 is " + itemOnePrice +
+    "<br>" +
+    "Quantity of item is " + qty1 +
+    "<br>" +
+    "Price of item 2 is " + itemTwoPrice +
+    "<br>" +
+    "Quantity of item is " + qty2 +
+    "<br>" +
+    "Shipping Charges " + shipCharges +
+    "<br><br>" +
+    "Total cost of your order is " + total
+  );
+}
+
+function ME8() {
+  var totalMarks = 980;
+  var marksObt = 804;
+  var percentage = marksObt / totalMarks * 100;
+  document.write(
+    "<h1>Mark Sheet</h1>" +
+    "<br>" +
+    "Total Marks: " + totalMarks +
+    "<br>" +
+    "Marks obtained: " + marksObt +
+    "<br>" +
+    "Percentage: " + percentage
+  );
+}
+
+function ME9() {
+  var usDollar = 104.80;
+  var saudiRiyal = 28;
+  var totalPkr = 10 * 104.80 + 25 * 28;
+  document.write(
+    "<h1>Currency in PKR</h1>" +
+    "<br>" +
+    "Total Currency in PKR: " + totalPkr
+  );
+}
+
+function ME10() {
+  var num = 7;
+  var result = (7 + 5 * 10) / 2;
+  alert("(7 + 5 * 10) / 2 = " + result)
+}
+
+function ME11() {
+  var currentYear = 2020;
+  var birthYear = 1996;
+  var age = currentYear - birthYear;
+  document.write(
+    "<h1>Age Calculator</h1>" +
+    "<br>" +
+    "Current Year: " + currentYear +
+    "<br>" +
+    "Birth Year: " + birthYear +
+    "<br>" +
+    "Your Age is: " + age
+  );
+}
+
+function ME12() {
+  var radius = 20;
+  var circumference = 2 * 3.142 * 20;
+  var area = 3.142 * radius * radius;
+  document.write(
+    "<h1>The Geometrizer</h1>" +
+    "<br>" +
+    "Radius of a Circle: " + radius +
+    "<br>" +
+    "The Circumference is: " + circumference +
+    "<br>" +
+    "The Area is: " + area
+  );
+}
+
+function ME13() {
+  var snack = "Chocolate Chip";
+  var currentAge = 24;
+  var maximumAge = 84;
+  var estAmount = 2;
+  var supply = (maximumAge - currentAge) * estAmount;
+  document.write(
+    "<h1>The Lifetime Supply Calculator</h1>" +
+    "<br>" +
+    "Favourite Snack: " + snack +
+    "<br>" +
+    "Current Age: " + currentAge +
+    "<br>" +
+    "Edtimated Maximum Age: " + maximumAge +
+    "<br>" +
+    "Amount if snack per day: " + estAmount +
+    "<br>" +
+    "you You will need " + supply + " to last you until the ripe old age of " + maximumAge
+  )
+}
+
+
+
+
+
 
