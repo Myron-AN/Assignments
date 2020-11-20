@@ -334,6 +334,212 @@ function ME13() {
   )
 }
 
+// Chapter 6-9
+
+// Q1
+function MEP1() {
+
+  var a = prompt("Enter a random number");
+  document.write("Result:" + "<br>" + "The Value of a is: " + a + "<br><br>" +
+    "--------------------------" + "<br>")
+
+  var b = ++a;
+  document.write(
+    "<br> The Value of ++a is: " + b +
+    "<br> Now the value of a is : " + a +
+    "<br>"
+  )
+
+  var c = a++;
+  document.write(
+    "<br> The Value of a++ is: " + c +
+    "<br> Now the value of a is : " + a +
+    "<br>"
+  )
+
+  var d = --a;
+  document.write(
+    "<br> The Value of --a is: " + d +
+    "<br> Now the value of a is : " + a +
+    "<br>"
+  )
+
+  var e = a--;
+  document.write(
+    "<br> The Value of a-- is: " + e +
+    "<br> Now the value of a is : " + a +
+    "<br>"
+  )
+
+}
+
+// Q2
+function MEP2() {
+
+  var a = 2;
+  var b = 1;
+  document.write(
+    "a = " + a +
+    "<br>" +
+    "b = " + b +
+    "<br><br>"
+  )
+
+  var c = --a;
+  document.write(
+    "Value of --a is: " + c +
+    "<br>" +
+    "Now the value of a is: " + a +
+    "<br><br>"
+  )
+
+  var d = --b;
+  document.write(
+    "Value of --b is: " + d +
+    "<br>" +
+    "Now the value of b is: " + b +
+    "<br><br>"
+  )
+
+  var e = c - d;
+  document.write(
+    "Value of --a - --b is: " + e +
+    "<br><br>"
+  )
+
+  var f = ++b;
+  document.write(
+    "Value of ++b is: " + f +
+    "<br>" +
+    "Now the value of b is: " + b +
+    "<br><br>"
+  )
+
+  var g = c - d + f;
+  document.write(
+    "value of --a - --b + ++b is: " + g +
+    "<br><br>"
+  )
+
+  var h = b--;
+  document.write(
+    "Value of b-- is: " + f +
+    "<br>" +
+    "Now the value of b is: " + b +
+    "<br><br>"
+  )
+
+  var i = c - d + f + h;
+  document.write(
+    "Result of --a - --b + ++b + b-- is: " + i
+  )
+
+}
+
+// Q3
+function MEP3() {
+
+  var name = prompt("Enter Your Name", "username");
+  alert("Greetings " + name + "!");
+}
+
+
+// Q4
+function MEP4() {
+
+  var a = prompt("Enter a random number", "5");
+
+  document.write("Table of " + a)
+  var b = a * 1;
+  document.write("<br>5 x 1 = " + b);
+  var c = a * 2;
+  document.write("<br>5 x 2 = " + c);
+  var d = a * 3;
+  document.write("<br>5 x 3 = " + d);
+  var e = a * 4;
+  document.write("<br>5 x 4 = " + e);
+  var f = a * 5;
+  document.write("<br>5 x 5 = " + f);
+  var g = a * 6;
+  document.write("<br>5 x 6 = " + g);
+  var h = a * 7;
+  document.write("<br>5 x 7 = " + h);
+  var i = a * 8;
+  document.write("<br>5 x 8 = " + i);
+  var j = a * 9;
+  document.write("<br>5 x 9 = " + j);
+  var k = a * 10;
+  document.write("<br>5 x 10 = " + k);
+
+}
+
+// Q5 
+function MEP5() {
+
+  var subOne = prompt("1st Subject Name");
+  var totalMarks1 = +prompt("Total Marks");
+  var obtMarks1 = +prompt("Obtained Marks");
+  var resultOne = (totalMarks1 * obtMarks1) / 100;
+
+  var subTwo = prompt("2nd Subject Name");
+  var totalMarks2 = +prompt("Total Marks");
+  var obtMarks2 = +prompt("Obtained Marks");
+  var resultTwo = (totalMarks2 * obtMarks2) / 100;
+
+  var subThree = prompt("3rd Subject Name");
+  var totalMarks3 = +prompt("Total Marks");
+  var obtMarks3 = +prompt("Obtained Marks");
+  var resultThree = (totalMarks3 * obtMarks3) / 100;
+
+  var overAllTotal = totalMarks1 + totalMarks2 + totalMarks3 ;
+  var overAllObt = obtMarks1 + obtMarks2 + obtMarks3 ;
+  var overAllPercentage = (overAllObt/overAllTotal)*100;
+
+  document.write(
+    "<table style='width:40%'>" +
+
+    "<tr>" +
+    "<th>Subject</th>" +
+    "<th>Total Marks</th>" +
+    "<th>Obtained Marks</th>" +
+    "<th>Percentage</th>" +
+    "</tr>" +
+
+    "<tr>" +
+    "<td>" + subOne + "</td>" +
+    "<td>" + totalMarks1 + "</td>" +
+    "<td>" + obtMarks1 + "</td>" +
+    "<td>" + resultOne + "%</td>" +
+    "</tr>" +
+
+    "<tr>" +
+    "<td>" + subTwo + "</td>" +
+    "<td>" + totalMarks2 + "</td>" +
+    "<td>" + obtMarks2 + "</td>" +
+    "<td>" + resultTwo + "%</td>" +
+    "</tr>" +
+
+    "<tr>" +
+    "<td>" + subThree + "</td>" +
+    "<td>" + totalMarks3 + "</td>" +
+    "<td>" + obtMarks3 + "</td>" +
+    "<td>" + resultThree + "%</td>" +
+    "</tr>" +
+    
+    "<tr>" +
+    "<th>" + "</th>" +
+    "<th>" + overAllTotal + "</th>" +
+    "<th>" + overAllObt + "</th>" +
+    "<th>" + overAllPercentage + "%</th>" +
+    "</tr>" +
+
+    "<table>"
+  )
+
+
+
+
+}
 
 
 
