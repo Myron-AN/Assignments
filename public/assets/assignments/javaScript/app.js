@@ -479,21 +479,21 @@ function MEP5() {
   var subOne = prompt("1st Subject Name");
   var totalMarks1 = +prompt("Total Marks");
   var obtMarks1 = +prompt("Obtained Marks");
-  var resultOne = (totalMarks1 * obtMarks1) / 100;
+  var resultOne = (obtMarks1 / totalMarks1) * 100;
 
   var subTwo = prompt("2nd Subject Name");
   var totalMarks2 = +prompt("Total Marks");
   var obtMarks2 = +prompt("Obtained Marks");
-  var resultTwo = (totalMarks2 * obtMarks2) / 100;
+  var resultTwo = (obtMarks2 / totalMarks2) * 100;
 
   var subThree = prompt("3rd Subject Name");
   var totalMarks3 = +prompt("Total Marks");
   var obtMarks3 = +prompt("Obtained Marks");
-  var resultThree = (totalMarks3 * obtMarks3) / 100;
+  var resultThree = (obtMarks3 / totalMarks3) * 100;
 
-  var overAllTotal = totalMarks1 + totalMarks2 + totalMarks3 ;
-  var overAllObt = obtMarks1 + obtMarks2 + obtMarks3 ;
-  var overAllPercentage = (overAllObt/overAllTotal)*100;
+  var overAllTotal = totalMarks1 + totalMarks2 + totalMarks3;
+  var overAllObt = obtMarks1 + obtMarks2 + obtMarks3;
+  var overAllPercentage = (overAllObt / overAllTotal) * 100;
 
   document.write(
     "<table style='width:40%'>" +
@@ -525,7 +525,7 @@ function MEP5() {
     "<td>" + obtMarks3 + "</td>" +
     "<td>" + resultThree + "%</td>" +
     "</tr>" +
-    
+
     "<tr>" +
     "<th>" + "</th>" +
     "<th>" + overAllTotal + "</th>" +
@@ -536,11 +536,228 @@ function MEP5() {
     "<table>"
   )
 
+}
 
+
+
+// Chapter 9-11
+
+// Q1
+
+function UIC1() {
+  var x = prompt("Enter your city name");
+  if (x === "Karachi") {
+    alert("Welcome to city of lights");
+  }
+}
+
+function UIC2() {
+  var gender = prompt("Enter your gender.");
+  if (gender === "male") {
+    alert("Good Morning Sir!");
+  }
+  else {
+    alert("Good Morning Ma'am!");
+  }
+}
+
+function UIC3() {
+  var color = prompt("Traffic Light Color?");
+  if (color === "red") {
+    alert("Must Stop!");
+  }
+  else if (color === "yellow") {
+    alert("Ready to move");
+  }
+  else if (color === "green") {
+    alert("Move now!");
+  }
+  else {
+    alert("Wrong Color!");
+  }
+}
+
+function UIC4() {
+  var fuel = +prompt("Current fuel?", "e.g: 0.05, 0.25, 1, 3, 5");
+  if (fuel <= 0.25) {
+    alert("Please refill the fuel in your car!");
+  }
+  else {
+    alert("your good to go!");
+  }
+}
+
+function UIC5() {
+  var a = 4;
+  if (++a === 5) {
+    alert("given condition for variable a is true");
+  }
+
+  var b = 82;
+  if (b++ === 83) {
+    alert("given condition for variable b is true");
+  }
+
+  var c = 12;
+  if (c++ === 13) {
+    alert("condition 1 is true");
+  }
+  if (c === 13) {
+    alert("condition 2 is true");
+  }
+  if (++c < 14) {
+    alert("condition 3 is true");
+  }
+  if (c === 14) {
+    alert("condition 4 is true");
+  }
+
+  var materialCost = 20000;
+  var laborCost = 2000;
+  var totalCost = materialCost + laborCost;
+  if (totalCost === laborCost + materialCost) {
+    alert("The cost equals");
+  }
+  if (true) {
+    alert("True");
+  }
+  if (false) {
+    alert("False");
+  }
+}
+
+function UIC6() {
+
+  var english = +prompt("Marks Obtained in English", "total marks 100");
+  var mathamatics = +prompt("Marks Obtained in Mathamatics", "total marks 85");
+  var physics = +prompt("Marks Obtained in physics", "total marks 75");
+  var totalMarks = 100 + 85 + 75;
+  var totalObt = english + mathamatics + physics;
+  var percentage = Math.round((totalObt / totalMarks) * 100);
+  var grade;
+  var remarks;
+
+  if (percentage >= 80) {
+    grade = "A-one";
+    remarks = "Excellent!"
+  }
+  else if (percentage >= 70) {
+    grade = "A";
+    remarks = "Good"
+  }
+  else if (percentage >= 60) {
+    grade = "B";
+    remarks = "You need to improve"
+  }
+  else if (percentage < 60) {
+    grade = "Fail";
+    remarks = "Sorry"
+  }
+  else {
+    alert("wrong input!");
+  }
+
+  document.write(
+    "<h1>Mark Sheet</h1>" +
+    "<br>" +
+    "Total marks: " + totalMarks +
+    "<br>" +
+    "Marks obtained: " + totalObt +
+    "<br>" +
+    "Percentage: " + percentage + "%" +
+    "<br>" +
+    "Grade: " + grade +
+    "<br>" +
+    "Remarks: " + remarks +
+    "<br>"
+  )
 
 
 }
 
+function UIC7() {
+  var guess = +prompt("Guess the secret number", "(range from 1-10)");
+  var num = 7;
+  var num2 = ++num;
+  var num3 = --num;
+  if (guess === num) {
+    alert("Bingo!");
+  }
+  else if (guess === num2 || guess === --num) {
+    alert("Close enough to the correct answer");
+  }
+
+  else {
+    alert("Try agin");
+  }
+}
+
+function UIC8() {
+  var num = +prompt("Enter a random number");
+  if (num % 3 === 0) {
+    alert("Number is divisible by 3");
+  }
+  else {
+    alert("Not divisible!");
+  }
+}
+
+function UIC9() {
+  var num = +prompt("Enter a number"); 150
+  if (num % 2 === 0) {
+    alert("Even Number");
+  }
+  else {
+    alert("Odd Number");
+  }
+}
+
+function UIC10() {
+  var temp = +prompt("Enter the tempreature");
+  if (temp > 40) {
+    alert("It is too hot outside.");
+  }
+  else if (temp > 30) {
+    alert("The Weather today is Normal.");
+  }
+  else if (temp > 20) {
+    alert("Today’s Weather is cool.");
+  }
+  else if (temp > 10) {
+    alert("OMG! Today’s weather is so Cool.");
+  }
+  else if (temp < 10) {
+    alert("Freezing!");
+  }
+  else {
+    alert("Wrong input!");
+  }
+}
+
+function UIC11() {
+  var firstNum = +prompt("first num");
+  var operator = prompt("operator");
+  var secondNum = +prompt("second num");
+  var result;
+
+  if (operator === "+") {
+    result = firstNum + secondNum;
+    alert(result);
+  }
+  else if (operator === "-") {
+    result = firstNum - secondNum;
+    alert(result);
+  }
+  else if (operator === "/") {
+    result = firstNum / secondNum;
+    alert(result);
+  }
+  else if (operator === "%") {
+    result = firstNum % secondNum;
+    alert(result);
+  }
+
+}
 
 
 
