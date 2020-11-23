@@ -759,6 +759,77 @@ function UIC11() {
 
 }
 
+// Chapter 12-13
+
+function IFE1() {
+  alert("work in progress");
+}
+
+function IFE2() {
+  var numOne = +prompt("Enter a First number");
+  var numTwo = +prompt("Enter a Second number");
+  if (numOne < numTwo) {
+    alert(numTwo + "is larger");
+  }
+  else if (numOne > numTwo) {
+    alert(numOne + "is larger");
+  }
+  else if (numOne === numTwo) {
+    alert("both are equal");
+  }
+  else {
+    alert("wrong input!")
+  }
+}
+
+function IFE3() {
+
+  var num = +prompt("enter a random number");
+  if (num > 0) {
+    alert("Positive Number");
+  }
+  else if (num < 0) {
+    alert("Negative Number")
+  }
+  else if (num === 0) {
+    alert("zero!");
+  }
+  else {
+    alert("wrong input!");
+  }
+}
+
+function IFE4() {
+  var alpt = prompt("Enter an alphabet!");
+  if (alpt == "a" || alpt == "e" || alpt == "i" || alpt == "o" || alpt == "u"){
+    alert("Vowel!");
+  }
+  else{
+    alert("not a vowel!");
+  }
+}
+
+function IFE5() {
+  var pass = "password"
+  var checkPass = prompt("Please enter your password", "password");
+  if (checkPass === pass){
+    alert("Correct! The password you entered matches the original password");
+  }
+  else{
+    alert("Incorrect password");
+  }
+}
+
+function IFE6() {
+  alert("work in progress");
+}
+
+function IFE7() {
+  alert("work in progress");
+}
+
+
+
 
 
 
