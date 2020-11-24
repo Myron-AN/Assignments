@@ -801,10 +801,10 @@ function IFE3() {
 
 function IFE4() {
   var alpt = prompt("Enter an alphabet!");
-  if (alpt == "a" || alpt == "e" || alpt == "i" || alpt == "o" || alpt == "u"){
+  if (alpt == "a" || alpt == "e" || alpt == "i" || alpt == "o" || alpt == "u") {
     alert("Vowel!");
   }
-  else{
+  else {
     alert("not a vowel!");
   }
 }
@@ -812,20 +812,199 @@ function IFE4() {
 function IFE5() {
   var pass = "password"
   var checkPass = prompt("Please enter your password", "password");
-  if (checkPass === pass){
+  if (checkPass === pass) {
     alert("Correct! The password you entered matches the original password");
   }
-  else{
+  else {
     alert("Incorrect password");
   }
 }
 
 function IFE6() {
-  alert("work in progress");
+  var greeting;
+  var hour = 13;
+  if (hour < 18) {
+    greeting = "Good day";
+    alert(greeting);
+  }
+  else {
+    greeting = "Good evening";
+    alert(greeting);
+  }
+
 }
 
 function IFE7() {
   alert("work in progress");
+}
+
+
+//Chapter 14-16
+
+function ARR1() {
+  var studentNames = ["Ali", "Akhbar", "Anthony"];
+  alert(studentNames);
+}
+
+function ARR2() {
+  alert("work in progress");
+}
+
+function ARR3() {
+  var strArry = ["Karachi", "Lahore", "Islamabad", "Peshawar"];
+  alert(strArry);
+}
+
+function ARR4() {
+  var numArry = [1, 2, 3, 4, 5];
+  alert(numArry);
+}
+
+function ARR5() {
+  var boolArry = [true, false];
+  alert(boolArry);
+}
+
+function ARR6() {
+  var mixedArry = [1, "karachi", "is no.", true];
+  alert(mixedArry);
+}
+
+function ARR7() {
+  var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"];
+  document.write(
+    "<h1>Qualifications</h1>" +
+    "<br>" +
+    "1) " + qualifications[0] +
+    "<br>" +
+    "2) " + qualifications[1] +
+    "<br>" +
+    "3) " + qualifications[2] +
+    "<br>" +
+    "4) " + qualifications[3] +
+    "<br>" +
+    "5) " + qualifications[4] +
+    "<br>" +
+    "6) " + qualifications[5] +
+    "<br>" +
+    "7) " + qualifications[6] +
+    "<br>" +
+    "8) " + qualifications[7]
+  )
+}
+
+function ARR8() {
+  var name = ["Michael", "John", "Tony"];
+  var score = [320, 230, 480];
+  var total = 500;
+  var per1 = (score[0] / total) * 100;
+  var per2 = (score[1] / total) * 100;
+  var per3 = (score[2] / total) * 100;
+  document.write(
+    "Score of " + name[0] + "is " + score[0] + ". Percentage: " + per1 + "%" +
+    "<br>" +
+    "Score of " + name[1] + "is " + score[1] + ". Percentage: " + per2 + "%" +
+    "<br>" +
+    "Score of " + name[2] + "is " + score[2] + ". Percentage: " + per3 + "%"
+  )
+}
+
+function ARR9() {
+  var colors = ["Red", "Green", "Blue"];
+  alert(colors);
+
+  var addColor = prompt("Add a color at the beginning of an array");
+  colors.unshift(addColor);
+  alert(colors);
+
+  var add2Color = prompt("Add a color at the end of an array");
+  colors.push(add2Color);
+  alert(colors);
+
+  var add3Color = prompt("Add a color at the beginning of an array");
+  var add4Color = prompt("Add an other color at the beginning of an array");
+  colors.unshift(add3Color, add4Color);
+  alert(colors);
+
+  alert("Deleting the first color in an array");
+  colors.shift();
+  alert(colors);
+
+  alert("Deleting the last color in an array");
+  colors.pop();
+  alert(colors);
+
+  var colorIndex = +prompt("Enter an index number");
+  var color = prompt("Enter a color");
+  colors.splice(colorIndex, 0, color);
+  alert(colors);
+
+  var colorIndex2 = +prompt("Enter an index number to remove color");
+  var delColors = +prompt("How man color you want to delete");
+  colors.splice(colorIndex, delColors);
+  alert(colors);
+
+}
+
+function ARR10() {
+  var scores = [320, 230, 480, 120];
+  document.write(
+    "Scores of Students: " + scores[0] + "," + scores[1] + "," + scores[2] + "," + scores[3] +
+    "<br>"
+  )
+  var ordered = scores.sort();
+  document.write(
+    "Ordered Scores of Students: " + ordered[0] + "," + ordered[1] + "," + ordered[2] + "," + ordered[3]
+  )
+}
+
+function ARR11() {
+  var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+  var selectedCities = cities.slice(2, 4);
+  document.write(
+    "Cities list:<br>" + cities[0] + "," + cities[1] + "," + cities[2] + "," + cities[3] + "," + cities[4] +
+    "<br>" +
+    "Selected cities list: <br>" + selectedCities[0] + "," + selectedCities[1]
+  )
+}
+
+function ARR12() {
+  var arr = ["This", "is", "my", "cat"];
+  alert(arr.join(' '));
+}
+
+function ARR13() {
+  alert("work in progress");
+}
+
+function ARR14() {
+  alert("work in progress");
+}
+
+function ARR15() {
+  var brands = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+  document.write(
+
+    "<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' integrity='sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' crossorigin='anonymous'>" +
+    "<script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>" +
+    "<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx' crossorigin='anonymous'></script>" +
+
+    "<div class='dropdown'>" +
+    "<button class='btn btn-secondary dropdown-toggle' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>" +
+    "Dropdown" +
+    "</button>" +
+    "<div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>" +
+    "<a class='dropdown-item' href='#'>" + brands[0] + "</a>" +
+    "<a class='dropdown-item' href='#'>" + brands[1] + "</a>" +
+    "<a class='dropdown-item' href='#'>" + brands[2] + "</a>" +
+    "<a class='dropdown-item' href='#'>" + brands[3] + "</a>" +
+    "<a class='dropdown-item' href='#'>" + brands[4] + "</a>" +
+    "<a class='dropdown-item' href='#'>" + brands[5] + "</a>" +
+    "</div>" +
+    "</div>"
+  )
+
 }
 
 
