@@ -450,26 +450,16 @@ function MEP4() {
   var a = prompt("Enter a random number", "5");
 
   document.write("Table of " + a)
-  var b = a * 1;
-  document.write("<br>5 x 1 = " + b);
-  var c = a * 2;
-  document.write("<br>5 x 2 = " + c);
-  var d = a * 3;
-  document.write("<br>5 x 3 = " + d);
-  var e = a * 4;
-  document.write("<br>5 x 4 = " + e);
-  var f = a * 5;
-  document.write("<br>5 x 5 = " + f);
-  var g = a * 6;
-  document.write("<br>5 x 6 = " + g);
-  var h = a * 7;
-  document.write("<br>5 x 7 = " + h);
-  var i = a * 8;
-  document.write("<br>5 x 8 = " + i);
-  var j = a * 9;
-  document.write("<br>5 x 9 = " + j);
-  var k = a * 10;
-  document.write("<br>5 x 10 = " + k);
+  document.write("<br>"+ a + " x 1 = " + a*1);
+  document.write("<br>"+ a + " x 2 = " + a*2);
+  document.write("<br>"+ a + " x 3 = " + a*3);
+  document.write("<br>"+ a + " x 4 = " + a*4);
+  document.write("<br>"+ a + " x 5 = " + a*5);
+  document.write("<br>"+ a + " x 6 = " + a*6);
+  document.write("<br>"+ a + " x 7 = " + a*7);
+  document.write("<br>"+ a + " x 8 = " + a*8);
+  document.write("<br>"+ a + " x 9 = " + a*9);
+  document.write("<br>"+ a + " x 10 = " + a*10);
 
 }
 
