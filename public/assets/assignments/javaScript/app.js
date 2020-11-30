@@ -997,8 +997,46 @@ function ARR15() {
 
 }
 
+// Chapter 17-20
 
+function ARL1(){
+  alert("work in progress");
+}
 
+function ARL2(){
+  alert("work in progress");
+}
 
+function ARL3(){
+  alert("work in progress");
+}
+
+function ARL4(){
+  alert("work in progress");
+}
+
+function ARL5(){
+  alert("work in progress");
+}
+
+function ARL6(){
+  alert("work in progress");
+}
+
+function ARL7(){
+  alert("work in progress");
+}
+
+function ARL8(){
+  alert("work in progress");
+}
+
+function ARL9(){
+  alert("work in progress");
+}
+
+function ARL10(){
+  alert("work in progress");
+}
 
 
