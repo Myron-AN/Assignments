@@ -450,16 +450,16 @@ function MEP4() {
   var a = prompt("Enter a random number", "5");
 
   document.write("Table of " + a)
-  document.write("<br>"+ a + " x 1 = " + a*1);
-  document.write("<br>"+ a + " x 2 = " + a*2);
-  document.write("<br>"+ a + " x 3 = " + a*3);
-  document.write("<br>"+ a + " x 4 = " + a*4);
-  document.write("<br>"+ a + " x 5 = " + a*5);
-  document.write("<br>"+ a + " x 6 = " + a*6);
-  document.write("<br>"+ a + " x 7 = " + a*7);
-  document.write("<br>"+ a + " x 8 = " + a*8);
-  document.write("<br>"+ a + " x 9 = " + a*9);
-  document.write("<br>"+ a + " x 10 = " + a*10);
+  document.write("<br>" + a + " x 1 = " + a * 1);
+  document.write("<br>" + a + " x 2 = " + a * 2);
+  document.write("<br>" + a + " x 3 = " + a * 3);
+  document.write("<br>" + a + " x 4 = " + a * 4);
+  document.write("<br>" + a + " x 5 = " + a * 5);
+  document.write("<br>" + a + " x 6 = " + a * 6);
+  document.write("<br>" + a + " x 7 = " + a * 7);
+  document.write("<br>" + a + " x 8 = " + a * 8);
+  document.write("<br>" + a + " x 9 = " + a * 9);
+  document.write("<br>" + a + " x 10 = " + a * 10);
 
 }
 
@@ -999,44 +999,134 @@ function ARR15() {
 
 // Chapter 17-20
 
-function ARL1(){
-  alert("work in progress");
+function ARL1() {
+  var arr = [
+    [1, 2, 3, 4],
+    ["a", "b", "c", "d"],
+    [5, 6, "e", "f"]
+  ];
+  console.log(arr);
 }
 
-function ARL2(){
-  alert("work in progress");
+function ARL2() {
+  var arr = [
+    [0, 1, 2, 3],
+    [1, 0, 1, 2],
+    [2, 1, 0, 1]
+  ];
+
+  // document.write(arr[0] + "<br> ");
+  // document.write(arr[1] + "<br> ");
+  // document.write(arr[2] + "<br> ");
+
+  for (var i = 0; i < arr.length; i++) {
+    document.write(arr[i] + "<br> ");
+  }
+
 }
 
-function ARL3(){
-  alert("work in progress");
+function ARL3() {
+  for (var i = 1; i < 11; ++i) {
+    document.write(i + "<br>");
+  }
 }
 
-function ARL4(){
-  alert("work in progress");
+function ARL4() {
+  var num = +prompt("Enter a number to show multiplication table");
+  var lgth = +prompt("Enter a length of multiplication table");
+
+  document.write(
+    "Multiplication table of " + num +
+    "<br>" +
+    "Length " + lgth +
+    "<br>" +
+    "<br>"
+  )
+  for (var i = 1; i <= lgth; i++) {
+    document.write(num + " x " + i + " = " + num * i + "<br>");
+  }
 }
 
-function ARL5(){
-  alert("work in progress");
+function ARL5() {
+  var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+  for (var i = 0; i < fruits.length; i++) {
+    document.write(fruits[i] + "<br>");
+  }
+  for (var j = 0; j < fruits.length; j++) {
+    document.write("Element at index " + j + " is " + fruits[j] + "<br>");
+  }
 }
 
-function ARL6(){
-  alert("work in progress");
+function ARL6() {
+
+  document.write("<h2>Counting:</h2>")
+  for (var i = 1; i < 16; i++) {
+    document.write(i + ",");
+  }
+
+  document.write("<br>" + "<h2>Reverse counting:</h2>")
+  for (var i = 10; i > 0; i--) {
+    document.write(i + ",");
+  }
+
+  document.write("<br>" + "<h2>Even:</h2>")
+  for (var i = 0; i < 10; i++) {
+    document.write(i * 2 + ",");
+  }
+
+  //Odd
+  // for(var i = 0; i < 10; i++){
+  //   console.log(i);
+  // }
+
+  document.write("<br>" + "<h2>Series:</h2>")
+  for (var i = 1; i < 10; i++) {
+    document.write(i * 2 + "k" + ",");
+  }
 }
 
-function ARL7(){
-  alert("work in progress");
+function ARL7() {
+  var a = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
+  var b = ["cake", "apple pie", "cookie", "chips", "patties"];
+  var matchFound = false;
+
+  for (var i = 0; i <= b.length; i++) {
+    if (a === b[i]) {
+      matchFound = true;
+      alert(b[i] + " is avaliable at index " + i + " in our bakery");
+    }
+  }
+  if (matchFound === false) {
+    alert("we are sorry. " + a + " is not available in our bakery");
+  }
 }
 
-function ARL8(){
-  alert("work in progress");
+function ARL8() {
+  var a = [24, 53, 78, 91, 12];
+  document.write("Array item " + a);
+  for (var i = 0; i <= a.length; i++) {
+    if (a[i] === 91) {
+      document.write("<br>" + "The largest number is " + a[i]);
+      break;
+    }
+  }
 }
 
-function ARL9(){
-  alert("work in progress");
+function ARL9() {
+  var a = [24, 53, 78, 91, 12];
+  document.write("Array item " + a);
+  for (var i = 0; i <= a.length; i++) {
+    if (a[i] === 12) {
+      document.write("<br>" + "The smallest number is " + a[i]);
+      break;
+    }
+  }
 }
 
-function ARL10(){
-  alert("work in progress");
+function ARL10() {
+  for (var i = 0; i <= 20; i++) {
+    document.write(i * 5 + ",");
+  }
 }
 
 
